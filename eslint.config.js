@@ -9,7 +9,7 @@ const prettierConfig = require("eslint-config-prettier");
 
 module.exports = defineConfig([
   {
-    ignores: ["node_modules", "build", "dist", ".next", "next-env.d.ts"]
+    ignores: ["node_modules", "build", "dist", ".next", "next-env.d.ts", ".postgres-data"]
   },
 
   {
