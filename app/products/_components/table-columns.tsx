@@ -2,15 +2,15 @@
 
 import { CircleIcon } from "lucide-react";
 import { ColumnDef } from "@tanstack/react-table";
-import { Product } from "@prisma/client";
 
 import { Badge } from "@/app/_components/badge";
+import { ProductDto } from "@/app/_data-access/product/get-products";
 
 const getStatusLabel = (status: string) => {
   return status === "IN_STOCK" ? "Em estoque" : "Fora de estoque";
 };
 
-export const productTableColumns: ColumnDef<Product & { status: string }>[] = [
+export const productTableColumns: ColumnDef<ProductDto>[] = [
   {
     accessorKey: "name",
     header: "Produto"
