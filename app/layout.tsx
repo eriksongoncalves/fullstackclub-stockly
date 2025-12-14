@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 
 import "./globals.css";
 import { Sidebar } from "@/app/_components/sidebar";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   display: "auto",
@@ -27,6 +28,8 @@ export default function RootLayout({
           <Sidebar />
           {children}
         </div>
+
+        <Toaster />
       </body>
     </html>
   );
